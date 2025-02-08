@@ -25,7 +25,7 @@ def reset_dictionary():
     print("Словарь сброшен")
 
 scheduler = AsyncIOScheduler()
-scheduler.add_job(reset_dictionary, CronTrigger(hour=20, minute=25))
+scheduler.add_job(reset_dictionary, CronTrigger(hour=0, minute=0))
 
 
 def get_food_info(product_name):
